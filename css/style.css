@@ -210,6 +210,9 @@ img {
   .container {
     width: 93%; }
 
+  .heading .heading-logo b {
+    transform: rotate(0deg) !important;
+    margin-left: 0 !important; }
   .heading .heading__heading-top {
     padding: 20px 0; }
     .heading .heading__heading-top .heading__bar {
