@@ -193,6 +193,180 @@ img {
           padding: 5px 16px;
           width: 200px;
           color: #ed1c24; }
+  .main .main__page-link {
+    margin: 0 0 10px; }
+    .main .main__page-link a {
+      color: #999;
+      font-size: 13px;
+      text-decoration: none; }
+    .main .main__page-link span {
+      font-size: 13px; }
+  .main .main__product-detail .fix-row {
+    align-items: flex-start;
+    padding: 15px; }
+  .main .main__product-detail .bg-white {
+    background: #fff; }
+  .main .main__product-detail .main__item img {
+    width: 100%; }
+  .main .main__product-detail .main__item .item__info {
+    padding: 30px 0; }
+    .main .main__product-detail .main__item .item__info h2 {
+      font-size: 20px;
+      font-weight: 400;
+      margin: 10px 0; }
+    .main .main__product-detail .main__item .item__info div {
+      display: flex;
+      align-items: center;
+      justify-content: space-between; }
+      .main .main__product-detail .main__item .item__info div span.sku {
+        margin: 0 0 30px; }
+      .main .main__product-detail .main__item .item__info div span {
+        margin: 0 0 20px; }
+      .main .main__product-detail .main__item .item__info div span:nth-child(1) {
+        color: #666;
+        font-size: 13px; }
+      .main .main__product-detail .main__item .item__info div span:nth-child(2) {
+        width: 60%; }
+    .main .main__product-detail .main__item .item__info hr {
+      border-color: rgba(0, 0, 0, 0.12);
+      border-width: thin 0 0 0; }
+    .main .main__product-detail .main__item .item__info form {
+      margin: 30px 0; }
+      .main .main__product-detail .main__item .item__info form span {
+        margin-bottom: 0; }
+      .main .main__product-detail .main__item .item__info form p {
+        width: 60%; }
+        .main .main__product-detail .main__item .item__info form p input, .main .main__product-detail .main__item .item__info form p button {
+          width: 32px;
+          height: 32px;
+          text-align: center;
+          font-size: 16px;
+          background: #fff;
+          border: 1px solid #dbdbdb; }
+        .main .main__product-detail .main__item .item__info form p button:nth-child(1) {
+          margin-right: -4px; }
+        .main .main__product-detail .main__item .item__info form p button:nth-child(3) {
+          margin-left: -4px; }
+      .main .main__product-detail .main__item .item__info form > button {
+        width: 230px;
+        padding: 13px;
+        font-size: 14px;
+        margin: 50px 0 0 0;
+        background: #f44336;
+        border: none;
+        color: #fff; }
+      .main .main__product-detail .main__item .item__info form > button:hover {
+        border: 1px solid #ed1c24;
+        color: #ed1c24;
+        background: #fff; }
+  .main .main__product-detail .main__item:first-child {
+    width: 40%; }
+  .main .main__product-detail .main__item:last-child {
+    width: 60%; }
+  .main .main__about p {
+    font-size: 23px;
+    font-weight: 300; }
+  .main .main__product-description .show {
+    padding: 10px 20px;
+    text-align: center;
+    background-color: #fff; }
+    .main .main__product-description .show img {
+      display: inline-block; }
+    .main .main__product-description .show p {
+      text-align: left; }
+  .main .main__description h1 {
+    font-size: 18px;
+    font-weight: bold;
+    border-bottom: 1px solid #d63636; }
+  .main .main__product-list .main__item {
+    position: relative;
+    width: 262px;
+    transition: all .3s ease-in-out; }
+    .main .main__product-list .main__item img {
+      width: 100% !important;
+      margin-bottom: 20px; }
+    .main .main__product-list .main__item .main__info {
+      padding: 0 10px; }
+      .main .main__product-list .main__item .main__info a.title {
+        font-size: 14px;
+        color: #333;
+        text-decoration: none;
+        margin-bottom: 10px;
+        display: inline-block; }
+      .main .main__product-list .main__item .main__info span {
+        font-size: 13px;
+        color: #333;
+        font-weight: bold; }
+      .main .main__product-list .main__item .main__info .buy {
+        margin: 20px 0;
+        width: 100%;
+        background-color: #ed1c24;
+        text-transform: uppercase;
+        color: #fff;
+        outline: none;
+        border: none;
+        font-size: 13px;
+        padding: 10px 16px; }
+  .main .main__cart .main__page-title {
+    width: 100%;
+    border-bottom: 1px solid #ed1c24; }
+    .main .main__cart .main__page-title h1 {
+      font-size: 25px;
+      font-weight: bold;
+      color: #cc0101;
+      border-bottom: 3px solid #ed1c24;
+      display: inline-block; }
+  .main .main__cart form {
+    margin-top: 30px;
+    padding: 20px 0;
+    background: #fff;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px 0; }
+    .main .main__cart form table {
+      width: 65%; }
+      .main .main__cart form table tr {
+        border-bottom: 1px solid #b9b9b9; }
+        .main .main__cart form table tr td, .main .main__cart form table tr th {
+          padding: 10px 0 10px 0;
+          vertical-align: middle;
+          text-align: center; }
+      .main .main__cart form table tr:nth-child(2) td:nth-child(1) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left; }
+        .main .main__cart form table tr:nth-child(2) td:nth-child(1) .img img {
+          width: 100px; }
+        .main .main__cart form table tr:nth-child(2) td:nth-child(1) .info {
+          width: 68%; }
+          .main .main__cart form table tr:nth-child(2) td:nth-child(1) .info a {
+            font-size: 15px;
+            text-decoration: none;
+            font-weight: bold;
+            color: #000;
+            margin: 7px 0;
+            display: inline-block; }
+            .main .main__cart form table tr:nth-child(2) td:nth-child(1) .info a span, .main .main__cart form table tr:nth-child(2) td:nth-child(1) .info a i {
+              font-weight: 400;
+              font-size: 12px;
+              color: #cc0101; }
+      .main .main__cart form table tr:nth-child(2) td .qty input, .main .main__cart form table tr:nth-child(2) td .qty button {
+        width: 32px;
+        height: 32px; }
+      .main .main__cart form table tr:nth-child(2) td .qty button:nth-child(1) {
+        margin-right: -4px; }
+      .main .main__cart form table tr:nth-child(2) td .qty button:nth-child(3) {
+        margin-left: -4px; }
+      .main .main__cart form table tr:nth-child(3) td {
+        text-align: left; }
+    .main .main__cart form .main__item:last-child {
+      width: 30%; }
+
+.fix-pd2 {
+  padding: 10px 0 30px; }
 
 .footer .footer__footer-top {
   border-top: 2px solid #cc0101;
@@ -205,6 +379,76 @@ img {
     .footer .footer__footer-top .footer__item h3 {
       margin: 20px 0;
       font-weight: bold; }
+
+.login {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: url("../image/login/background.svg") center no-repeat;
+  background-size: cover;
+  background-color: #f0f8ff; }
+  .login .login--width {
+    width: 420px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+  .login .item {
+    box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+    padding: 32px;
+    text-align: center;
+    background: #fff; }
+    .login .item .login__logo {
+      font-style: italic; }
+      .login .item .login__logo span {
+        font-size: 50px;
+        font-weight: 600;
+        color: #000; }
+      .login .item .login__logo small {
+        font-size: 30px;
+        color: #fc3535;
+        font-weight: 600; }
+      .login .item .login__logo b {
+        display: inline-block;
+        font-size: 25px;
+        font-weight: 600;
+        color: #fc3535; }
+    .login .item h5 {
+      font-size: 24px;
+      margin: 20px 0 30px 0; }
+    .login .item form {
+      text-align: center; }
+      .login .item form input {
+        width: 100%;
+        padding: 10px 14px;
+        margin: 0 0 30px 0;
+        border-radius: 3px;
+        outline: none;
+        border: 1px solid #c2c2c2; }
+      .login .item form input:focus {
+        border: 1px solid #2196f3; }
+      .login .item form button {
+        width: 100%;
+        font-weight: bold;
+        color: #fff;
+        background: #2196f3;
+        padding: 10px 16px;
+        font-size: 14px;
+        outline: none;
+        border: none;
+        border-radius: 3px;
+        margin: 0 0 20px 0;
+        transition: all .3s ease-in-out; }
+      .login .item form button:hover {
+        background: #1769aa; }
+    .login .item a {
+      text-decoration: none;
+      color: #2196f3;
+      font-size: 16px; }
+    .login .item a:hover {
+      color: #1769aa; }
+  .login .fix-pd {
+    padding: 60px 32px; }
 
 @media screen and (max-width: 479px) {
   .container {
@@ -258,6 +502,8 @@ img {
       display: block;
       cursor: pointer; }
     .heading .heading__menu ul li.check .drop-down {
+      opacity: 1 !important;
+      visibility: visible;
       margin-top: 10px;
       display: none;
       position: static; }
@@ -282,8 +528,27 @@ img {
 
   .main .main__content .main__item {
     width: 50% !important; }
+  .main .main__product-detail .row {
+    flex-direction: column; }
+    .main .main__product-detail .row .main__item {
+      width: 100%; }
+      .main .main__product-detail .row .main__item .item__info span:nth-child(2) {
+        width: 30%; }
+      .main .main__product-detail .row .main__item .item__info p {
+        width: 40%; }
+      .main .main__product-detail .row .main__item form > button {
+        width: 100% !important; }
+      .main .main__product-detail .row .main__item form > button:hover {
+        border: none;
+        color: #fff;
+        background: #f44336; }
+  .main .main__product-list .main__item {
+    width: 47%; }
 
   .footer .footer__item {
-    width: 50% !important; } }
+    width: 50% !important; }
+
+  .login .login--width {
+    width: 90% !important; } }
 
 /*# sourceMappingURL=style.css.map */

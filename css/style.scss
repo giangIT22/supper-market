@@ -273,6 +273,270 @@
             }
         }
     }
+
+    //===============DETAIL======================
+    .main__page-link{
+        margin: 0 0 10px;
+        a{
+            color: #999;
+            font-size: 13px;
+            text-decoration: none;
+            
+        }
+        span{
+            font-size: 13px;
+        }
+    }
+    .main__product-detail{
+        .fix-row{
+            align-items: flex-start;
+            padding: 15px;
+        }
+        .bg-white{
+            background: #fff;
+        }
+        .main__item{
+            img{
+                width: 100%;
+            }
+            .item__info{
+                padding: 30px 0;
+                h2{
+                    font-size: 20px;
+                    font-weight: 400;
+                    margin: 10px 0;
+                }
+                div{
+					display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    span.sku{
+                        margin: 0 0 30px;
+                    }
+                    span{
+						margin: 0 0 20px;
+						
+                    }
+                    span:nth-child(1){
+					
+						color: #666;
+						font-size: 13px;
+                    }
+                    span:nth-child(2){
+                        width: 60%;
+                    }
+                }
+				hr{
+					border-color: rgba(0,0,0,.12);
+					border-width: thin 0 0 0;
+				}
+				form{
+					margin: 30px 0;
+					span{
+						margin-bottom: 0;
+					}
+					p{
+                        width: 60%;
+						input, button{
+							width: 32px;
+							height: 32px;
+							text-align: center;
+							font-size: 16px;
+							background: #fff;
+							border: 1px solid rgb(219, 219, 219);
+						}
+						button:nth-child(1){
+							margin-right: -4px;
+						}
+						button:nth-child(3){
+							margin-left: -4px;
+						}
+					}
+					>button{
+						width: 230px;
+						padding: 13px;
+						font-size: 14px;
+						margin: 50px 0 0 0;
+						background: #f44336;
+						border: none;
+						color: #fff;
+					}
+
+					>button:hover{
+						border: 1px solid #ed1c24;
+						color: #ed1c24;
+						background: #fff;
+					}
+				}
+            }
+        }
+        .main__item:first-child{
+            width: 40%;
+        }
+        .main__item:last-child{
+            width: 60%;
+        }
+    }
+
+    .main__about{
+        p{
+            font-size: 23px;
+            font-weight: 300;
+        }
+    }
+    .main__product-description{
+        .show{
+            padding: 10px 20px;
+            text-align: center;
+            background-color: #fff;
+            img{
+                display: inline-block;
+            }
+            p{
+                text-align: left;
+            }
+        }
+        
+    }
+
+    //====================BESTSELLER-SHOP=============================
+    .main__description{
+        h1{
+            font-size: 18px;
+            font-weight: bold;
+            border-bottom: 1px solid rgb(214, 54, 54);
+        }
+    }
+    .main__product-list{
+        .main__item{
+            position: relative;
+            width: 262px;
+            transition: all .3s ease-in-out;
+            img{
+                width: 100% !important;
+                margin-bottom: 20px;
+            }
+            .main__info{
+                padding: 0 10px;
+                a.title{
+                    font-size: 14px;
+                    color: #333;
+                    text-decoration: none;
+                    margin-bottom: 10px;
+                    display: inline-block;
+                }
+                span{
+                    font-size: 13px;
+                    color: #333;
+                    font-weight: bold;
+                }
+                .buy{
+                    margin: 20px 0;
+                    width: 100%;
+                    background-color: #ed1c24;
+                    text-transform: uppercase;
+                    color: #fff;
+                    outline: none;
+                    border: none;
+                    font-size: 13px;
+                    padding: 10px 16px;
+                }
+            }
+          
+        }
+    }
+
+    //==============CART==========================
+    .main__cart{
+        .main__page-title{
+            width: 100%;
+            border-bottom: 1px solid #ed1c24;
+            h1{
+                font-size: 25px;
+                font-weight: bold;
+                color: #cc0101;
+                border-bottom: 3px solid #ed1c24;
+                display: inline-block;
+            }
+        }
+        form{
+            margin-top: 30px;
+            padding: 20px 0;
+            background: #fff;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 30px 0;
+            table{
+                width: 65%;
+                tr{
+                    border-bottom: 1px solid rgb(185, 185, 185);
+                    td, th{
+                        padding: 10px 0 10px 0; 
+                        vertical-align: middle;
+                        text-align: center;
+                    }
+                }
+                tr:nth-child(2){
+                    td:nth-child(1){
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        text-align: left;
+                        .img{
+                            
+                           img{
+                               width: 100px;
+                           }
+                        }
+                        .info{
+                            width: 68%;                            
+                                a{
+                                    font-size: 15px;
+                                    text-decoration: none;
+                                    font-weight: bold;
+                                    color: #000;
+                                    margin: 7px 0;
+                                    display: inline-block;
+                                    span,i{
+                                        font-weight: 400;
+                                        font-size: 12px;
+                                        color: #cc0101;
+                                    }
+                                }
+                            
+                        }
+                    }
+                    td{
+                        .qty{
+                            input, button{
+                                width: 32px;
+                                height: 32px;
+                            }
+                            button:nth-child(1){
+                                margin-right: -4px;
+                            }
+                            button:nth-child(3){
+                                margin-left: -4px;
+                            }
+                        }
+                    }
+                    
+                }
+                tr:nth-child(3) td{
+                    text-align: left;
+                }
+            }
+            .main__item:last-child{
+                width: 30%;
+            }
+        }
+    }
+}
+
+.fix-pd2{
+    padding: 10px 0 30px;
 }
 
 .footer{
@@ -293,6 +557,94 @@
     }
 }
 
+
+//===============Dang nhap========================
+.login{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: url("../image/login/background.svg") center no-repeat;
+    background-size: cover;
+    background-color: #f0f8ff;
+    .login--width{
+        width: 420px;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+   .item{
+    box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2), 0px 1px 1px 0px rgba(0,0,0,0.14), 0px 1px 3px 0px rgba(0,0,0,0.12);
+       padding: 32px;
+       text-align: center;
+       background: #fff;
+        .login__logo{
+            font-style: italic;
+            span{
+                font-size: 50px;
+                font-weight: 600;
+                color: #000;
+            }
+            small{
+                font-size: 30px;
+                color: rgb(252, 53, 53);
+                font-weight: 600;
+            }
+            b{
+                display: inline-block;
+                font-size: 25px;
+                font-weight: 600;
+                color: rgb(252, 53, 53);
+            }
+        }
+        h5{
+            font-size: 24px;
+            margin: 20px 0 30px 0;
+        }
+        form{
+            text-align: center;
+            input{
+               width: 100%;
+               padding: 10px 14px;
+               margin: 0 0 30px 0;
+               border-radius: 3px;
+               outline: none;
+               border: 1px solid rgb(194, 194, 194);
+            }
+            input:focus{
+                border: 1px solid #2196f3;
+            }
+            button{
+                width: 100%;
+                font-weight: bold;
+                color: #fff;
+                background: #2196f3;
+                padding: 10px 16px;
+                font-size: 14px;
+                outline: none;
+                border: none;
+                border-radius: 3px;
+                margin: 0 0 20px 0;
+                transition: all .3s ease-in-out;
+            }
+            button:hover{
+                background: #1769aa;
+            }
+        }
+        a{
+            text-decoration: none;
+            color: #2196f3;
+            font-size: 16px;
+        }
+        a:hover{
+            color: #1769aa;
+        }
+   }
+   .fix-pd{
+       padding: 60px 32px;
+   }
+
+}
 //===============responsive===================
 
 //=============phone======================
@@ -370,6 +722,8 @@
 				}
 				li.check{
 					.drop-down{
+                        opacity: 1 !important;                        
+                        visibility: visible;
 						margin-top: 10px;
 						display: none;
 						position: static;
@@ -408,11 +762,48 @@
                 width: 50% !important;
             }
         }
+        .main__product-detail{
+            .row{
+                flex-direction: column;
+                .main__item{
+                    width: 100%;
+                    .item__info{
+                        span:nth-child(2){
+                            width: 30%;
+                        }
+                        p{
+                            width: 40%;
+                        }
+                    }
+                    form>button{
+                        width: 100% !important;
+                    }
+                    form>button:hover{
+                        border: none;
+						color: #fff;
+						background:#f44336;
+                    }
+                }
+            }
+        }
+        .main__product-list{
+            .main__item{
+                width: 47%;
+            }
+        }
     }
-
+    
     .footer{
         .footer__item{
             width: 50% !important;
+        }
+        
+    }
+
+    //================login==============
+    .login{
+        .login--width{
+            width: 90% !important;
         }
     }
 }
