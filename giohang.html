@@ -84,13 +84,13 @@
                 <div class="row">
                     <form action="#">
                         <table class="main__item">
-                            <tr>
+                            <tr class="item-1">
                                 <th>Tên sản phẩm</th>
                                 <th>Giá</th>
                                 <th>Số lượng</th>
                                 <th>thành tiền</th>
                             </tr>
-                            <tr>
+                            <tr class="item-2">
                                 <td>
                                     <div class="img">
                                         <img src="./image/drinks/cocacola.jpg" alt="">
@@ -115,9 +115,63 @@
                                         </p>
                                     </div>
                                 </td>
-                                <td>d</td>
+                                <td>10.000</td>
                             </tr>
-                            <tr>
+                            <tr class="item-2">
+                                <td>
+                                    <div class="img">
+                                        <img src="./image/drinks/cocacola.jpg" alt="">
+                                    </div>
+                                    <div class="info">
+                                        <h3 class="product-name">
+                                            <a href="">Coca cola</a>
+                                        </h3>
+                                        <a href="" class="remove-product"><i class="fa fa-trash-o" aria-hidden="true"></i>
+                                        <span>Xóa sản phẩm</span></a>
+                                    </div>
+                                </td>
+                                <td>10.000</td>
+                                <td>
+                                    <div class="qty">
+                                        <p>
+                                            <button><i class="fa fa-minus" aria-hidden="true"></i>
+                                            </button>
+                                            <input type="text" name="qty" id="" value="1">
+                                            <button><i class="fa fa-plus" aria-hidden="true"></i>
+                                            </button>
+                                        </p>
+                                    </div>
+                                </td>
+                                <td>10.000</td>
+                            </tr>
+                            <tr class="item-2">
+                                <td>
+                                    <div class="img">
+                                        <img src="./image/drinks/cocacola.jpg" alt="">
+                                    </div>
+                                    <div class="info">
+                                        <h3 class="product-name">
+                                            <a href="">Coca cola</a>
+                                        </h3>
+                                        <a href="" class="remove-product"><i class="fa fa-trash-o" aria-hidden="true"></i>
+                                        <span>Xóa sản phẩm</span></a>
+                                    </div>
+                                </td>
+                                <td>10.000</td>
+                                <td>
+                                    <div class="qty">
+                                        <p>
+                                            <button><i class="fa fa-minus" aria-hidden="true"></i>
+                                            </button>
+                                            <input type="text" name="qty" id="" value="1">
+                                            <button><i class="fa fa-plus" aria-hidden="true"></i>
+                                            </button>
+                                        </p>
+                                    </div>
+                                </td>
+                                <td>10.000</td>
+                            </tr>
+                            <tr class="item-3">
                                 <td colspan="4">
                                     <button class="continue">Tiếp tục mua hàng</button>
                                     <button class="update">Cập nhật só lượng</button>
@@ -135,6 +189,66 @@
                 </div>
             </div>
         </section>
+        <div class="overlay"></div>
     </main>
+
+    
+    <footer class="footer">
+        <section class="footer__footer-top">
+			<div class="container">
+				<div class="row">
+					<div class="footer__item">
+						<img src="./image/services/1.png" alt="">
+						<h3>Sản phẩm an toàn</h3>
+					</div>
+					<div class="footer__item">
+						<img src="./image/services/2.png" alt="">
+						<h3>Chất lượng cam kết</h3>
+					</div>
+					<div class="footer__item">
+						<img src="./image/services/3.png" alt="">
+						<h3>Dịch vụ vượt trội</h3>
+					</div>
+					<div class="footer__item">
+						<img src="./image/services/4.png" alt="">
+						<h3>Giao hàng nhanh chóng</h3>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<section class="footer__footer-bottom">
+			<div class="container">
+				<div class="row">
+
+				</div>
+			</div>
+		</section>
+	</footer>
+	
+	<script>
+		
+		let showMenu = document.querySelector('.heading__bar');
+		let hideMenu = document.querySelector('.heading--close');
+		let overLay  = document.querySelector('.overlay');
+		let showDropDownMenu = document.querySelector('.check');
+
+		showMenu.addEventListener('click', function() {
+			document.querySelector('.heading__menu').classList.add('show-menu');
+			document.body.style.overflow = "hidden";
+			overLay.style.display = "block"
+		});
+
+		hideMenu.addEventListener('click', function() {
+			document.querySelector('.heading__menu').classList.remove('show-menu');
+			document.body.style.overflow = "visible";
+			overLay.style.display = "none";
+			document.querySelector('.drop-down').classList.remove('show');
+		});
+
+		showDropDownMenu.addEventListener('click', function() {
+			document.querySelector('.drop-down').classList.toggle('show');
+		});
+	</script>
 </body>
 </html>

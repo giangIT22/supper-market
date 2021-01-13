@@ -38,7 +38,7 @@
   }
   
   .container{
-    width: 1170px;
+    max-width: 1170px;
     margin: auto;
   }
   
@@ -466,19 +466,23 @@
             width: 100%;
             display: flex;
             justify-content: space-around;
-            align-items: center;
             padding: 30px 0;
             table{
                 width: 65%;
                 tr{
                     border-bottom: 1px solid rgb(185, 185, 185);
+                    th{
+                        font-weight: bold;
+                    }
                     td, th{
                         padding: 10px 0 10px 0; 
                         vertical-align: middle;
-                        text-align: center;
                     }
                 }
-                tr:nth-child(2){
+                tr.item-2{
+                    td{
+                        text-align: center;
+                    }
                     td:nth-child(1){
                         display: flex;
                         justify-content: space-between;
@@ -513,6 +517,7 @@
                             input, button{
                                 width: 32px;
                                 height: 32px;
+                                text-align: center;
                             }
                             button:nth-child(1){
                                 margin-right: -4px;
@@ -524,12 +529,108 @@
                     }
                     
                 }
-                tr:nth-child(3) td{
-                    text-align: left;
+
+                tr.item-3{
+                    border: none;
+                    td{
+                        padding: 20px 0;
+                        button{
+                            padding: 10px 20px;
+                            border: 1px solid #cc0101;
+                            color: #cc0101;
+                            background: #fff;
+                            transition: all .3s ease-in-out;
+                        }
+                        button:hover{
+                            color: #fff;
+                            background: #cc0101;
+                        }
+                    }
                 }
+                
             }
             .main__item:last-child{
                 width: 30%;
+                .sum-price{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    border-top: 1px solid rgb(185, 185, 185);
+                    border-bottom: 1px solid rgb(185, 185, 185);
+                    padding: 20px ;
+                    strong{
+                        font-size: 14px;
+                        font-weight: bold;
+                    }
+                    span{
+                        font-weight: bold;
+                    }
+                }
+                .checkout{
+                    width: 100%;
+                    margin-top: 30px;
+                    background: #cc0101;
+                    color: #fff;
+                    padding: 10px 20px;
+                    border:none;
+                    transition: all .3s ease-in-out;
+                }
+                .checkout:hover{
+                    border: 1px solid #cc0101;
+                    color: #cc0101;
+                    background: #fff;
+                }
+            }
+        }
+    }
+
+    //======================Thanh toán - checkout===============
+    .main__checkout{
+        .main__checkout-title{
+            span{
+                font-size: 25px;
+                color: #000;
+                font-weight: bold;
+                margin-left: 15px;
+            }
+        }
+        .main__item{
+            margin: 40px 0 20px 0;
+            h2{
+                font-size: 17px;
+                font-weight: bold;
+            }
+        }
+        .main__form-control{
+            background-color: #fff;
+            width: 100%;
+            padding: 25px;
+            .main__checkout-info{
+                display: flex;
+                justify-content: space-between;
+                margin: 0 0 30px 0;
+                label{
+                    font-size: 14px;
+                }
+                input, textarea{
+                    width: 70%;
+                    padding: 6px 12px;
+                }
+                input::placeholder{
+                    font-size: 13px;
+                }
+            }
+            .main__checkout-success{
+                padding: 20px 15px 30px;
+                text-align: right;
+                button{
+                    width: 200px;
+                    padding: 15px 12px;
+                    color: #fff;
+                    background: #ed1c24;
+                    border: none;
+                    font-weight: bold;
+                }
             }
         }
     }
@@ -563,7 +664,7 @@
     position: fixed;
     width: 100%;
     height: 100%;
-    background: url("../image/login/background.svg") center no-repeat;
+    background: url("../image/login/background.svg") no-repeat;
     background-size: cover;
     background-color: #f0f8ff;
     .login--width{
@@ -646,9 +747,262 @@
 
 }
 //===============responsive===================
+//================>992
+@media screen and (max-width:1199px){
+    .container{
+        width: 93%;
+    }
+    
+    .main{
+        .main__content{
+            .main__item{
+                width: 18% !important;
+            }
+        }
+        //=================ban chay===================
+        .main__product-list{
+            .main__item{
+                width: 24%;
+            }
+        }
+    }
 
+    .footer{
+        .footer__item{
+            width: 25% !important;
+        }
+        
+    }
+
+}
+// //==================TABLET-991===========================
+@media screen and (max-width:991px){
+    .container{
+        width: 95%;
+    }
+    .heading{
+		.heading-logo{
+			b{
+				transform: rotate(0deg) !important;
+				margin-left: 0 !important;
+			}
+		}
+        .heading__heading-top{
+			padding: 20px 0;
+            .heading__bar{
+                display: block;
+				font-size: 30px;
+				cursor: pointer;
+            }
+            .heading-logo{
+				margin-left: 30px;
+                span{
+                    font-size: 30px;
+                }
+            }
+           form{
+			   margin: 20px 0 0 0 ;
+			   order: 3;
+			   width: 100%;
+			   
+		   }
+		  
+           .heading__login{
+			   margin-left: 0 !important;
+               span{
+                   display: none;
+               }
+           }
+           .heading__cart{
+			   margin-left: 10px;
+               span{
+					display: none;
+               }
+           }
+        }
+        .heading__menu{
+			height: 100vh;
+			position: fixed;
+			z-index: 100;
+			top: 0;
+			background: #fff;
+			width: 70%;
+			right: 100%;
+			transition: all .3s ease-in-out;
+			.container{
+				width: 100%;
+			}
+            ul{
+                li{
+					display: block;
+					margin : 0 0 0 10px !important;
+					a{
+						color: #000;
+						font-size: 20px;
+					}
+					a:hover{
+						color: #ed1c24;
+					}
+				}
+				li.heading--close{
+					display: block;
+					cursor: pointer;
+				}
+				li.check{
+					.drop-down{
+                        opacity: 1 !important;                        
+                        visibility: visible;
+						margin-top: 10px;
+						display: none;
+						position: static;
+						a{
+							display: block;
+							margin: 8px 0 8px 15px;
+						}
+						a:hover{
+							color: #ed1c24;
+						}
+					}
+				}
+				li.heading--close{
+					text-align: right;
+					font-size: 30px;
+					width: 100%;
+					margin: 0 !important;
+					color: #fff;
+					background: #ed1c24;
+					i{
+						margin-right: 20px;
+					}
+				}
+            }
+        }
+        .heading__banner{
+            width: 100%;
+            img{
+                border-radius: 10px;
+            }
+        }
+    }
+
+    .main{
+        .main__content{
+            .main__item{
+                width: 33% !important;
+            }
+            .main__item:last-child{
+                display: none;
+            }
+        }
+        //===================chi tiet sna pham================
+        .main__product-detail{
+            .row{
+                flex-direction: column;
+                .main__item{
+                    width: 100%;
+                    .item__info{
+                        span:nth-child(2){
+                            width: 30%;
+                        }
+                        p{
+                            width: 40%;
+                        }
+                    }
+                    form>button{
+                        width: 100% !important;
+                    }
+                    form>button:hover{
+                        border: none;
+						color: #fff;
+						background:#f44336;
+                    }
+                }
+            }
+        }
+        //=================ban chay===================
+        .main__product-list{
+            .main__item{
+                width: 31%;
+            }
+        }
+        //=====================cart=======================
+        .main__cart{
+            form{
+                padding: 30px 10px;
+                flex-direction: column;
+                table{
+                    // border: 1px solid rgb(185, 185, 185);
+                    width: 100% !important;
+                    tr.item-1{
+                        th:nth-child(2),th:nth-child(4){
+                            display: none;
+                        }
+                    }
+                    tr{
+                        td:nth-child(2),td:nth-child(4){
+                            display: none;
+                        }
+                    }
+                    tr.item-2{
+                        td{
+                            .qty{
+                                p{
+                                    input, button{
+                                        // border-radius: 1px;
+                                        // border: 1% solid #000;
+                                        width: 25px;
+                                        height: 25px;
+                                        font-size: 13px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    tr.item-3{
+                        td{
+                            padding: 20px 10px;
+                            button{
+                                padding: 5px;
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                }
+                .main__item:last-child{
+                    width: 100%;
+                }
+            }
+        }
+
+        //=================Checkout-thanh toan=============
+        .main__checkout{
+            .main__form-control{
+                padding: 14px 15px 30px 15px;
+                label{
+                    display: none;
+                }
+                input, textarea{
+                    width: 100% !important;
+                }
+                .main__checkout-success{
+                    padding: 0 !important;
+                    button{
+                        width: 100% !important;
+                    }
+                }
+            }
+        }
+    }
+    
+    .footer{
+        .footer__item{
+            width: 50% !important;
+        }
+        
+    }
+}
 //=============phone======================
-@media screen and (max-width:479px){
+@media screen and (max-width:767px){
     .container{
         width: 93%;
     }
@@ -762,6 +1116,7 @@
                 width: 50% !important;
             }
         }
+        //===================chi tiet sna pham================
         .main__product-detail{
             .row{
                 flex-direction: column;
@@ -786,9 +1141,77 @@
                 }
             }
         }
+        //=================ban chay===================
         .main__product-list{
             .main__item{
                 width: 47%;
+            }
+        }
+        //=====================cart=======================
+        .main__cart{
+            form{
+                padding: 30px 10px;
+                flex-direction: column;
+                table{
+                    // border: 1px solid rgb(185, 185, 185);
+                    width: 100% !important;
+                    tr.item-1{
+                        th:nth-child(2),th:nth-child(4){
+                            display: none;
+                        }
+                    }
+                    tr{
+                        td:nth-child(2),td:nth-child(4){
+                            display: none;
+                        }
+                    }
+                    tr.item-2{
+                        td{
+                            .qty{
+                                p{
+                                    input, button{
+                                        // border-radius: 1px;
+                                        // border: 1% solid #000;
+                                        width: 25px;
+                                        height: 25px;
+                                        font-size: 13px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    tr.item-3{
+                        td{
+                            padding: 20px 10px;
+                            button{
+                                padding: 5px;
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                }
+                .main__item:last-child{
+                    width: 100%;
+                }
+            }
+        }
+
+        //=================Checkout-thanh toan=============
+        .main__checkout{
+            .main__form-control{
+                padding: 14px 15px 30px 15px;
+                label{
+                    display: none;
+                }
+                input, textarea{
+                    width: 100% !important;
+                }
+                .main__checkout-success{
+                    padding: 0 !important;
+                    button{
+                        width: 100% !important;
+                    }
+                }
             }
         }
     }
@@ -801,6 +1224,9 @@
     }
 
     //================login==============
+}
+
+@media screen and (max-width:479px){
     .login{
         .login--width{
             width: 90% !important;

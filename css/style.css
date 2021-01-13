@@ -31,7 +31,7 @@ img {
   max-width: 100%; }
 
 .container {
-  width: 1170px;
+  max-width: 1170px;
   margin: auto; }
 
 .row {
@@ -323,47 +323,120 @@ img {
     width: 100%;
     display: flex;
     justify-content: space-around;
-    align-items: center;
     padding: 30px 0; }
     .main .main__cart form table {
       width: 65%; }
       .main .main__cart form table tr {
         border-bottom: 1px solid #b9b9b9; }
+        .main .main__cart form table tr th {
+          font-weight: bold; }
         .main .main__cart form table tr td, .main .main__cart form table tr th {
           padding: 10px 0 10px 0;
-          vertical-align: middle;
-          text-align: center; }
-      .main .main__cart form table tr:nth-child(2) td:nth-child(1) {
+          vertical-align: middle; }
+      .main .main__cart form table tr.item-2 td {
+        text-align: center; }
+      .main .main__cart form table tr.item-2 td:nth-child(1) {
         display: flex;
         justify-content: space-between;
         align-items: center;
         text-align: left; }
-        .main .main__cart form table tr:nth-child(2) td:nth-child(1) .img img {
+        .main .main__cart form table tr.item-2 td:nth-child(1) .img img {
           width: 100px; }
-        .main .main__cart form table tr:nth-child(2) td:nth-child(1) .info {
+        .main .main__cart form table tr.item-2 td:nth-child(1) .info {
           width: 68%; }
-          .main .main__cart form table tr:nth-child(2) td:nth-child(1) .info a {
+          .main .main__cart form table tr.item-2 td:nth-child(1) .info a {
             font-size: 15px;
             text-decoration: none;
             font-weight: bold;
             color: #000;
             margin: 7px 0;
             display: inline-block; }
-            .main .main__cart form table tr:nth-child(2) td:nth-child(1) .info a span, .main .main__cart form table tr:nth-child(2) td:nth-child(1) .info a i {
+            .main .main__cart form table tr.item-2 td:nth-child(1) .info a span, .main .main__cart form table tr.item-2 td:nth-child(1) .info a i {
               font-weight: 400;
               font-size: 12px;
               color: #cc0101; }
-      .main .main__cart form table tr:nth-child(2) td .qty input, .main .main__cart form table tr:nth-child(2) td .qty button {
+      .main .main__cart form table tr.item-2 td .qty input, .main .main__cart form table tr.item-2 td .qty button {
         width: 32px;
-        height: 32px; }
-      .main .main__cart form table tr:nth-child(2) td .qty button:nth-child(1) {
+        height: 32px;
+        text-align: center; }
+      .main .main__cart form table tr.item-2 td .qty button:nth-child(1) {
         margin-right: -4px; }
-      .main .main__cart form table tr:nth-child(2) td .qty button:nth-child(3) {
+      .main .main__cart form table tr.item-2 td .qty button:nth-child(3) {
         margin-left: -4px; }
-      .main .main__cart form table tr:nth-child(3) td {
-        text-align: left; }
+      .main .main__cart form table tr.item-3 {
+        border: none; }
+        .main .main__cart form table tr.item-3 td {
+          padding: 20px 0; }
+          .main .main__cart form table tr.item-3 td button {
+            padding: 10px 20px;
+            border: 1px solid #cc0101;
+            color: #cc0101;
+            background: #fff;
+            transition: all .3s ease-in-out; }
+          .main .main__cart form table tr.item-3 td button:hover {
+            color: #fff;
+            background: #cc0101; }
     .main .main__cart form .main__item:last-child {
       width: 30%; }
+      .main .main__cart form .main__item:last-child .sum-price {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-top: 1px solid #b9b9b9;
+        border-bottom: 1px solid #b9b9b9;
+        padding: 20px; }
+        .main .main__cart form .main__item:last-child .sum-price strong {
+          font-size: 14px;
+          font-weight: bold; }
+        .main .main__cart form .main__item:last-child .sum-price span {
+          font-weight: bold; }
+      .main .main__cart form .main__item:last-child .checkout {
+        width: 100%;
+        margin-top: 30px;
+        background: #cc0101;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        transition: all .3s ease-in-out; }
+      .main .main__cart form .main__item:last-child .checkout:hover {
+        border: 1px solid #cc0101;
+        color: #cc0101;
+        background: #fff; }
+  .main .main__checkout .main__checkout-title span {
+    font-size: 25px;
+    color: #000;
+    font-weight: bold;
+    margin-left: 15px; }
+  .main .main__checkout .main__item {
+    margin: 40px 0 20px 0; }
+    .main .main__checkout .main__item h2 {
+      font-size: 17px;
+      font-weight: bold; }
+  .main .main__checkout .main__form-control {
+    background-color: #fff;
+    width: 100%;
+    padding: 25px; }
+    .main .main__checkout .main__form-control .main__checkout-info {
+      display: flex;
+      justify-content: space-between;
+      margin: 0 0 30px 0; }
+      .main .main__checkout .main__form-control .main__checkout-info label {
+        font-size: 14px; }
+      .main .main__checkout .main__form-control .main__checkout-info input, .main .main__checkout .main__form-control .main__checkout-info textarea {
+        width: 70%;
+        padding: 6px 12px; }
+      .main .main__checkout .main__form-control .main__checkout-info input::placeholder {
+        font-size: 13px; }
+    .main .main__checkout .main__form-control .main__checkout-success {
+      padding: 20px 15px 30px;
+      text-align: right; }
+      .main .main__checkout .main__form-control .main__checkout-success button {
+        width: 200px;
+        padding: 15px 12px;
+        color: #fff;
+        background: #ed1c24;
+        border: none;
+        font-weight: bold; }
 
 .fix-pd2 {
   padding: 10px 0 30px; }
@@ -384,7 +457,7 @@ img {
   position: fixed;
   width: 100%;
   height: 100%;
-  background: url("../image/login/background.svg") center no-repeat;
+  background: url("../image/login/background.svg") no-repeat;
   background-size: cover;
   background-color: #f0f8ff; }
   .login .login--width {
@@ -450,7 +523,147 @@ img {
   .login .fix-pd {
     padding: 60px 32px; }
 
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 1199px) {
+  .container {
+    width: 93%; }
+
+  .main .main__content .main__item {
+    width: 18% !important; }
+  .main .main__product-list .main__item {
+    width: 24%; }
+
+  .footer .footer__item {
+    width: 25% !important; } }
+@media screen and (max-width: 991px) {
+  .container {
+    width: 95%; }
+
+  .heading .heading-logo b {
+    transform: rotate(0deg) !important;
+    margin-left: 0 !important; }
+  .heading .heading__heading-top {
+    padding: 20px 0; }
+    .heading .heading__heading-top .heading__bar {
+      display: block;
+      font-size: 30px;
+      cursor: pointer; }
+    .heading .heading__heading-top .heading-logo {
+      margin-left: 30px; }
+      .heading .heading__heading-top .heading-logo span {
+        font-size: 30px; }
+    .heading .heading__heading-top form {
+      margin: 20px 0 0 0;
+      order: 3;
+      width: 100%; }
+    .heading .heading__heading-top .heading__login {
+      margin-left: 0 !important; }
+      .heading .heading__heading-top .heading__login span {
+        display: none; }
+    .heading .heading__heading-top .heading__cart {
+      margin-left: 10px; }
+      .heading .heading__heading-top .heading__cart span {
+        display: none; }
+  .heading .heading__menu {
+    height: 100vh;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    background: #fff;
+    width: 70%;
+    right: 100%;
+    transition: all .3s ease-in-out; }
+    .heading .heading__menu .container {
+      width: 100%; }
+    .heading .heading__menu ul li {
+      display: block;
+      margin: 0 0 0 10px !important; }
+      .heading .heading__menu ul li a {
+        color: #000;
+        font-size: 20px; }
+      .heading .heading__menu ul li a:hover {
+        color: #ed1c24; }
+    .heading .heading__menu ul li.heading--close {
+      display: block;
+      cursor: pointer; }
+    .heading .heading__menu ul li.check .drop-down {
+      opacity: 1 !important;
+      visibility: visible;
+      margin-top: 10px;
+      display: none;
+      position: static; }
+      .heading .heading__menu ul li.check .drop-down a {
+        display: block;
+        margin: 8px 0 8px 15px; }
+      .heading .heading__menu ul li.check .drop-down a:hover {
+        color: #ed1c24; }
+    .heading .heading__menu ul li.heading--close {
+      text-align: right;
+      font-size: 30px;
+      width: 100%;
+      margin: 0 !important;
+      color: #fff;
+      background: #ed1c24; }
+      .heading .heading__menu ul li.heading--close i {
+        margin-right: 20px; }
+  .heading .heading__banner {
+    width: 100%; }
+    .heading .heading__banner img {
+      border-radius: 10px; }
+
+  .main .main__content .main__item {
+    width: 33% !important; }
+  .main .main__content .main__item:last-child {
+    display: none; }
+  .main .main__product-detail .row {
+    flex-direction: column; }
+    .main .main__product-detail .row .main__item {
+      width: 100%; }
+      .main .main__product-detail .row .main__item .item__info span:nth-child(2) {
+        width: 30%; }
+      .main .main__product-detail .row .main__item .item__info p {
+        width: 40%; }
+      .main .main__product-detail .row .main__item form > button {
+        width: 100% !important; }
+      .main .main__product-detail .row .main__item form > button:hover {
+        border: none;
+        color: #fff;
+        background: #f44336; }
+  .main .main__product-list .main__item {
+    width: 31%; }
+  .main .main__cart form {
+    padding: 30px 10px;
+    flex-direction: column; }
+    .main .main__cart form table {
+      width: 100% !important; }
+      .main .main__cart form table tr.item-1 th:nth-child(2), .main .main__cart form table tr.item-1 th:nth-child(4) {
+        display: none; }
+      .main .main__cart form table tr td:nth-child(2), .main .main__cart form table tr td:nth-child(4) {
+        display: none; }
+      .main .main__cart form table tr.item-2 td .qty p input, .main .main__cart form table tr.item-2 td .qty p button {
+        width: 25px;
+        height: 25px;
+        font-size: 13px; }
+      .main .main__cart form table tr.item-3 td {
+        padding: 20px 10px; }
+        .main .main__cart form table tr.item-3 td button {
+          padding: 5px;
+          font-size: 12px; }
+    .main .main__cart form .main__item:last-child {
+      width: 100%; }
+  .main .main__checkout .main__form-control {
+    padding: 14px 15px 30px 15px; }
+    .main .main__checkout .main__form-control label {
+      display: none; }
+    .main .main__checkout .main__form-control input, .main .main__checkout .main__form-control textarea {
+      width: 100% !important; }
+    .main .main__checkout .main__form-control .main__checkout-success {
+      padding: 0 !important; }
+      .main .main__checkout .main__form-control .main__checkout-success button {
+        width: 100% !important; }
+
+  .footer .footer__item {
+    width: 50% !important; } }
+@media screen and (max-width: 767px) {
   .container {
     width: 93%; }
 
@@ -544,10 +757,40 @@ img {
         background: #f44336; }
   .main .main__product-list .main__item {
     width: 47%; }
+  .main .main__cart form {
+    padding: 30px 10px;
+    flex-direction: column; }
+    .main .main__cart form table {
+      width: 100% !important; }
+      .main .main__cart form table tr.item-1 th:nth-child(2), .main .main__cart form table tr.item-1 th:nth-child(4) {
+        display: none; }
+      .main .main__cart form table tr td:nth-child(2), .main .main__cart form table tr td:nth-child(4) {
+        display: none; }
+      .main .main__cart form table tr.item-2 td .qty p input, .main .main__cart form table tr.item-2 td .qty p button {
+        width: 25px;
+        height: 25px;
+        font-size: 13px; }
+      .main .main__cart form table tr.item-3 td {
+        padding: 20px 10px; }
+        .main .main__cart form table tr.item-3 td button {
+          padding: 5px;
+          font-size: 12px; }
+    .main .main__cart form .main__item:last-child {
+      width: 100%; }
+  .main .main__checkout .main__form-control {
+    padding: 14px 15px 30px 15px; }
+    .main .main__checkout .main__form-control label {
+      display: none; }
+    .main .main__checkout .main__form-control input, .main .main__checkout .main__form-control textarea {
+      width: 100% !important; }
+    .main .main__checkout .main__form-control .main__checkout-success {
+      padding: 0 !important; }
+      .main .main__checkout .main__form-control .main__checkout-success button {
+        width: 100% !important; }
 
   .footer .footer__item {
-    width: 50% !important; }
-
+    width: 50% !important; } }
+@media screen and (max-width: 479px) {
   .login .login--width {
     width: 90% !important; } }
 
