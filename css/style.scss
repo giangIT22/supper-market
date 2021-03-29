@@ -634,6 +634,31 @@
             }
         }
     }
+
+    .main__intro{
+        .main__item{
+            padding: 30px;
+            background-color: #fff;
+            h2{
+                font-weight: bold;
+                text-align: center;
+                margin-bottom: 40px;
+            }
+            p{
+                margin: 15px 0;
+                line-height: 20px;
+            }
+            h4{
+                margin-bottom: 10px;
+            }
+            ul{
+                
+                li{
+                    margin: 10px 0;
+                }
+            }
+        }
+    }
 }
 
 .fix-pd2{
@@ -656,10 +681,60 @@
             }
         }
     }
+
+    .footer__footer-bottom{
+        padding: 60px 0;
+        background-color: #ed1c24;
+        .row{
+            align-items: flex-start;
+        }
+        .footer__item{
+            width: 23%;
+            color: #fff;
+            h3{
+                text-transform: uppercase;
+                margin-bottom: 15px;                
+            }
+            ul{
+                list-style: none;
+                li{
+                    margin-bottom: 10px;
+                    a{
+                        color: #fff;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
 }
 
 
 //===============Dang nhap========================
+.form-control {
+    height: 40px;
+    padding: 8px 12px;
+    border: 1px solid #b3b3b3;
+    border-radius: 3px;
+    outline: none;
+}
+
+.form-group.invalid .form-control {
+    border-color: #f33a58;
+}
+
+.form-group.invalid .form-message {
+    color: #f33a58;
+    }
+
+.form-message {
+    font-size: 13px;
+    display: block;
+    text-align: left;
+    margin: 20px 0 5px 0;
+    padding: 4px 0 0;
+}
+
 .login{
     position: fixed;
     width: 100%;
@@ -707,7 +782,6 @@
             input{
                width: 100%;
                padding: 10px 14px;
-               margin: 0 0 30px 0;
                border-radius: 3px;
                outline: none;
                border: 1px solid rgb(194, 194, 194);
