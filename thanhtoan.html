@@ -87,7 +87,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <form action="" class="main__form-control">
+                    <form action="" class="main__form-control" id="form-3">
                         <div class="main__checkout-info">
                             <label for="">Họ và tên</label>
                             <input type="text" name="fullName" id="" placeholder="Nhập họ và tên đầy đủ">
@@ -97,12 +97,12 @@
                             <input type="text" name="phone" id="" placeholder="Nhập số điện thoại">
                         </div>
                         <div class="main__checkout-info">
-                            <label for="">Địa chỉ giao hàng</label>
-                            <input type="text" name="address" id="" placeholder="Nhập địa chỉ giao hàng cụ thể">
+                            <label for="">Địa chỉ giao hàng</label>                          
+                            <input type="text" name="address" id="" placeholder="Nhập địa chỉ giao hàng cụ thể">                                                      
                         </div>
                         <div class="main__checkout-info">
-                            <label for="">Ghi chú</label>
-                            <textarea rows="5"  name="note" placeholder="Ghi chú"></textarea>
+                            <label for="">Ghi chú</label>                            
+                            <textarea rows="5"  name="note" placeholder="Ghi chú"></textarea>                            
                         </div>
                         <div class="main__checkout-success">
                             <button>Hoàn tất</button>
@@ -147,6 +147,23 @@
 		</section>
 	</footer>
 	
+    <script src="./js/validator.js"></script>
+
+    <script>
+         Validator({
+            form: '#form-3',
+            errorSelector: '.form-message',
+            rules: [
+              Validator.isRequired('#username', 'Vui lòng nhập tên tài khoản'),
+              Validator.isRequired('#password'),
+              Validator.minLength('#password', 6),
+              Validator.isConfirmed('#repassword', function() {
+                return document.querySelector('#form-1 #password').value;
+              }, 'Mật khẩu nhập lại không chính xác'),          
+            ],
+          });
+    </script>
+
 	<script>
 		
 		let showMenu = document.querySelector('.heading__bar');

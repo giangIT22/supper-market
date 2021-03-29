@@ -619,6 +619,7 @@
                 input::placeholder{
                     font-size: 13px;
                 }
+                
             }
             .main__checkout-success{
                 padding: 20px 15px 30px;
@@ -1055,9 +1056,11 @@
                 label{
                     display: none;
                 }
+                
                 input, textarea{
                     width: 100% !important;
                 }
+                
                 .main__checkout-success{
                     padding: 0 !important;
                     button{
